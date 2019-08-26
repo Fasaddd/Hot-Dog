@@ -1,0 +1,89 @@
+.HotDog{
+    text-align: center;
+    width: 100%;
+}
+
+.HotDogImg img{
+    height: 200px;
+    width: 400px;
+}
+.Menu{
+    margin: 20px auto;
+    width: 80%;
+    text-align: center;
+    box-shadow: 0 2px 3px #ccc;
+    border: 1px solid #eee;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.Menu input{
+    width: 60%;
+    outline: none;
+    border: 1px solid #ccc;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+}
+
+.Ingredient{
+    padding: 10px;
+    text-align: left;
+    font-size: 18px;
+}
+
+.IngredientOrder{
+    text-transform: capitalize;
+    display: inline-block;
+    cursor: pointer;
+    margin: 0 8px;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #e2e6fc;
+}
+.IngredientOrder:hover{
+    background-color: red;
+    transition-duration: 0.5s;
+}
+
+.ButtonOrder{
+    background-color: #00b5ff;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #120996;
+    color: white;
+    font-family: inherit;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    box-shadow: 2px 2px 2px #966909;
+}
+.ButtonOrder:hover{
+    background-color: #1d05f0;
+    transition-duration: 0.5s;
+}
+.ButtonOrder:disabled {
+    background-color: rgb(76, 83, 88);
+    border: 1px solid #7E7365;
+    color: #ccc;
+    cursor: default;
+}
+
+.ButtonOrder:hover:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+.ButtonOrder:not(:disabled) {
+    animation: enable 0.3s linear;
+}
+@keyframes enable {
+    0% {
+        transform: scale(1);
+    }
+    60% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
